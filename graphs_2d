@@ -1,0 +1,55 @@
+a = 1/4
+b  = 1/16
+m = 8
+n = 8
+t =-5:0.01:5
+k = 1
+s = 10
+
+x = cos(t) - a.*cos(m.*t) + b.*sin(n.*t)
+y = sin(t) - a.*sin(m.*t) + b.*cos(n.*t)
+for k = 1:s
+  plot(x/k,y/k)
+  hold on
+
+
+
+##clear all
+##x = 0:0.1:1;
+##y1 = x.*(1-x) + 0.5;
+##y2 = exp(-0.5*x).*sin(0.5*x)
+##f = figure("name",'My graph','numbertitle','on')
+##c = plot(x,y1,'linewidth',4,'linestyle',':','color',[22/24 3/24 12/24])
+##hold on
+##plot(x,y2,'linestyle',':','marker','d','markersize',7)
+##
+##xlabel("x")
+##ylabel("f(x)")
+##title("my graph")
+##hold off
+##axis equal
+##F = @(x,y) x.^2 + y.^2 - 1;
+##C = ezplot(F,[-2 2 -2 2])
+##set(C, 'linewidth', 3 , 'color','g')
+##hold off;
+##x1 = 0:0.01:20;
+##x2 = 0:0.01:20;
+##y1 = 200*exp(-0.05*x).*sin(x);
+##y2 = 0.8*exp(-0.05*x).*sin(10*x);
+##plot(x,y1)
+##hold on
+##plot(x,y2)
+##[hAx,hLine1,hLine2] = plotyy(x1,y1,x2,y2)
+##a = 100
+##b = 2
+##n = 4
+##k = 14
+##m = 6
+##fi = -pi/2:0.01:3*pi/2;
+##r = a.*(b-sin(k.*fi) - cos(m.*fi))./(a+(fi-pi/2).^n)
+##x = r.*cos(fi)
+##y = r.*sin(fi)
+##plot(x,y)
+##hold off
+##p = [1 0 1];
+##roots(p)
